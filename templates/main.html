@@ -1,19 +1,98 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="ru">
+
 <head>
-    <title>Приветствие</title>
-    <meta charset="UTF-8">
-<h1>
-    Привет! Добро пожаловать в Русский Фейсбук!
-</h1>
-    <body>
+   <title>Приветствие</title>
+   <h1>Привет! Добро пожаловать в Русский Фейсбук!</h1>
 
-<a href="http://84.201.160.250/form.html">
-<p>
-    Начать общение!
-</p>
-</a>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+      body {
+         background: #1D1B26;
+      }
 
-</body>
+      h1 {
+         color: white;
+         font-family: 'Secular One', sans-serif;
+      }
+
+      p {
+         color: rgba(255, 255, 255, .8);
+      }
+
+      nav a {
+         color: rgba(255, 255, 255, .6);
+      }
+
+      .sliding-button {
+         text-decoration: none;
+         outline: none;
+         color: white;
+         display: inline-block;
+         position: relative;
+         padding: 15px 30px;
+         border: 1px solid;
+         border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+         border-image-slice: 1;
+         margin: 10px 20px;
+         font-family: 'Montserrat', sans-serif;
+         text-transform: uppercase;
+         overflow: hidden;
+         letter-spacing: 2px;
+         transition: .8s cubic-bezier(.165, .84, .44, 1);
+      }
+
+      .sliding-button:before {
+         content: '';
+         position: absolute;
+         left: 0;
+         top: 0;
+         height: 0;
+         width: 100%;
+         z-index: -1;
+         color: white;
+         background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+         transition: .8s cubic-bezier(.165, .84, .44, 1);
+      }
+
+      .sliding-button:hover {
+         background: rgba(255, 255, 255, 0);
+      }
+
+      .sliding-button:hover:before {
+         bottom: 0%;
+         top: auto;
+         height: 100%;
+      }
+      body {
+    color: #C0C0C0;
+   }
+   </style>
 </head>
+
+<body>
+
+   <div class="top">
+       <a href="">
+       </a>
+   </div>
+   <div class="container">
+
+      <div class="button-container">
+
+         <a href="http://84.201.160.250/form" class="sliding-button">
+		 <p>
+			Начать общение!
+		</p>
+	</a>
+
+      </div>
+   </div>
+
+<footer>
+&#169 Alexandr Lyapin
+
+    </body>
+
 </html>
